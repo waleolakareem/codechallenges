@@ -15,7 +15,10 @@ function findShort(arr){
 }
 //Convert Number to a String
 //numberToString(456) ----> `456`
-
 function numberToString(num) {
-  // Return a string of the number here!
+  //set up an empty string
+  var newString = ""
+  //add number to string
+  newString += num
+  return newString;
 }
