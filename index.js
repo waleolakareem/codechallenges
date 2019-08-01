@@ -22,3 +22,15 @@ function numberToString(num) {
   newString += num
   return newString;
 }
+
+//add all the sum of a number if it is a multiple of 3 and divided by 5
+function findSum(n) {
+  var finalSum = 0;
+  for (var i = 0;i <= n; i++) {
+    if ((i % 3 === 0) || (i % 5 === 0)) {
+      finalSum += i;
+    }
+  }
+  return finalSum;
+}
+
