@@ -8,11 +8,11 @@ function findShort(arr){
   for (var i= 0; i < sentenceArray.length; i++) {
     //smallest value should be length of shortest word
     if (sentenceArray[i].length < smallest) {
-      smallest = sentenceArray[i].length
+      smallest = sentenceArray[i].length;
     }
   }
    return smallest;
-}
+};
 //Convert Number to a String
 //numberToString(456) ----> `456`
 function numberToString(num) {
@@ -21,7 +21,7 @@ function numberToString(num) {
   //add number to string
   newString += num
   return newString;
-}
+};
 
 //add all the sum of a number if it is a multiple of 3 and divided by 5
 function findSum(n) {
@@ -32,5 +32,12 @@ function findSum(n) {
     }
   }
   return finalSum;
-}
+};
+
+//Jaden case: Capitalize all the first word in a given sentence
+function jadenCase(sentence) {
+ return sentence.split(" ").map(x => x[0].toUpperCase()+x.slice(1)).join(" ");
+};
+
+
 
